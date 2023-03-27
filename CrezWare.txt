@@ -1,7 +1,7 @@
--- Crez runs u 
+-- Halal Gaming such a W
 
  
-getgenv().CrezWare = {
+getgenv().Onsight = {
     Options = {
         ["Notifications"] = true,
     },
@@ -16,19 +16,19 @@ getgenv().CrezWare = {
     }, 
     Camlock = {
         ["Enabled"] = true,
-        ["Keybind"] = "-",
+        ["Keybind"] = "Q",
         ["Predict"] = false,
         ["Prediction"] = 0.1267,
         ["SmoothnessValue"] = 0.0181,
-        ["Shake"] = false,
-        ["ShakeValue"] = 3,
+        ["Shake"] = true,
+        ["ShakeValue"] = 1,
         ["Aimpart"] = "HumanoidRootPart",
         ["NearestCursorAimpart"] = true,
     },
     Custom = {
-        ["Shake"] = false,
+        ["Shake"] = true,
         ["Smoothness"] = true,
-        ["AirShakeValue"] = 4,
+        ["AirShakeValue"] = 10,
         ["AirSmoothnessValue"] = 0.1155,
         ["GroundShakeValue"] = 10,
         ["GroundSmoothnessValue"] = 0.0576,
@@ -46,7 +46,7 @@ getgenv().CrezWare = {
         Camlock = {
             ["Visible"] = false,
             ["Filled"] = false,
-            ["Size"] = 70,
+            ["Size"] = 60,
             ["Thickness"] = 3,
             ["Transparency"] = 0.25,
             ["Sides"] = 100,
@@ -69,7 +69,7 @@ getgenv().CrezWare = {
         ["Type"] = "Normal",
     },
     AutoPrediction = {
-        ["Enabled"] = false,
+        ["Enabled"] = true,
         ["P20"] = 0.12588,
         ["P30"] = 0.11911,
         ["P40"] = 0.12471,
@@ -122,12 +122,13 @@ getgenv().CrezWare = {
 
 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
 local Notify = AkaliNotif.Notify;
+
 if getgenv().Onsightloaded == true then
     if getgenv().Onsight.Options.Notifications == true then
 
 Notify({
 Description = "Settings From Script Updated.";
-Title = "Crez";
+Title = "Onsight";
 Duration = 1.5;
 });
         return
@@ -139,13 +140,13 @@ Duration = 1.5;
 
 Notify({
 Description = "Script Loading...";
-Title = "CrezWare";
+Title = "Onsight";
 Duration = 1.5;
 });
 wait(2)
 Notify({
 Description = "Script Loaded Enjoy!";
-Title = "CrezWare";
+Title = "Onsight";
 Duration = 1.5;
 });
 end
